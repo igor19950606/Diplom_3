@@ -2,16 +2,16 @@ package site.nomoreparties.stellarburgers.test;
 
 import java.util.UUID;
 
-public class TestUserGenerator {
+public class UserGeneratorTest {
 
     public static String generateUniqueEmail() {
         String uniqueSuffix = UUID.randomUUID().toString();
-        return "john" + uniqueSuffix + "@example.com"; // Генерация уникального email
+        return "Test" + uniqueSuffix + "@yandex.ru";
     }
 
     public static String generateUniqueName() {
         String uniqueSuffix = UUID.randomUUID().toString();
-        return "John Doe " + uniqueSuffix; // Генерация уникального имени
+        return "Testov" + uniqueSuffix;
     }
 }
 

@@ -1,4 +1,4 @@
-package site.nomoreparties.stellarburgers.page_object;
+package site.nomoreparties.stellarburgers.servinguser;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

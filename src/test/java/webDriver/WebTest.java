@@ -5,7 +5,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class WebTest {
 
-    // Сделаем метод getWebDriver публичным, чтобы его можно было вызывать из других пакетов
     public WebDriver getWebDriver(Browser browser) {
         switch (browser) {
             case CHROME:
@@ -15,7 +14,7 @@ public class WebTest {
                 System.setProperty("webdriver.chrome.driver", "C:\\Users\\IAPonomarev\\WebDriver\\bin\\yandexdriver.exe");
                 return new ChromeDriver();
             default:
-                throw new IllegalArgumentException("Неверно задан браузер: " + browser);
+                throw new IllegalArgumentException("Неверный браузер: " + browser);
         }
     }
 }

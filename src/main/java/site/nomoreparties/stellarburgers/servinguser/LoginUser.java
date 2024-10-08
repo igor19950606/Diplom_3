@@ -1,4 +1,4 @@
-package site.nomoreparties.stellarburgers.page_object;
+package site.nomoreparties.stellarburgers.servinguser;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -8,9 +8,5 @@ import lombok.Data;
 public class LoginUser {
     private String email;
     private String password;
-
-    public static LoginUser fromCreateUser(CreateUser createUser) {
-        return new LoginUser(createUser.getEmail(), createUser.getPassword());
-    }
 }
 
